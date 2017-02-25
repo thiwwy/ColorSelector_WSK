@@ -1,0 +1,22 @@
+doctype html
+html(lang='')
+  include partials/header
+  body.mdl-demo.mdl-color--grey-100.mdl-color-text--grey-700.mdl-base
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      include partials/head
+      main.mdl-layout__content
+
+        #overview.mdl-layout__tab-panel.is-active
+
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp(style="max-width: 1200px")
+            .mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
+              .mdl-tabs__tab-bar
+                a.mdl-tabs__tab.is-active(href='#starks-panel') Starks
+                a.mdl-tabs__tab(href='#lannisters-panel') Lannisters
+                a.mdl-tabs__tab(href='#targaryens-panel') Targaryens
+
+              include partials/color_menu-related_colors
+              include partials/color_menu-two_colors
+
+        include partials/footer-mini
+    include partials/scripts
