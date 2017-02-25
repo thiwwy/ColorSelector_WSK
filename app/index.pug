@@ -11,12 +11,14 @@ html(lang='')
           section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp(style="max-width: 1200px")
             .mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
               .mdl-tabs__tab-bar
-                a.mdl-tabs__tab.is-active(href='#starks-panel') Starks
-                a.mdl-tabs__tab(href='#lannisters-panel') Lannisters
-                a.mdl-tabs__tab(href='#targaryens-panel') Targaryens
+                a.mdl-tabs__tab.is-active(href='#related_colors') Related Colors
+                a.mdl-tabs__tab(href='#more_colors') More Colors
+                a.mdl-tabs__tab(href='#palette') Palette
+                a.mdl-tabs__tab(href='#options') Options
 
               include partials/color_menu-related_colors
-              include partials/color_menu-two_colors
+              include partials/color_menu-more_colors
+              include partials/color_menu-options
 
         include partials/footer-mini
     include partials/scripts
