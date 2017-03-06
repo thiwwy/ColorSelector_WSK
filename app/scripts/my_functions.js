@@ -1,5 +1,5 @@
 //Variables
-var overlay = $("#overlay"),
+var overlay = $(".mdl-layout__obfuscator"),
         fab = $(".fab"),
      cancel = $("#cancel"),
      submit = $("#submit");
@@ -11,8 +11,8 @@ cancel.on('click', closeFAB);
 
 function openFAB(event) {
   if (event) event.preventDefault();
-  fab.addClass('active');
-  overlay.addClass('dark-overlay');
+  fab.addClass('active-mypalette');
+  overlay.addClass('is-visible');
 
 }
 
@@ -22,7 +22,9 @@ function closeFAB(event) {
     event.stopImmediatePropagation();
   }
 
-  fab.removeClass('active');
-  overlay.removeClass('dark-overlay');
+  console.log("Hi!!");
+
+  fab.removeClass('active-mypalette');
+  overlay.removeClass('is-visible');
 
 }

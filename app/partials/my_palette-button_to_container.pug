@@ -1,10 +1,6 @@
-//button#add.mypalette-btn.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.mdl-shadow--4dp.mdl-color--accent
-  i.material-icons(role='presentation') add
-  span.visuallyhidden Add
-
-#overlay
-.fab
-  i.material-icons.fab-icon add
+.mdl-layout__obfuscator(style= "position: fixed;")
+#mypalette-btn.fab.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.mdl-shadow--4dp.mdl-color--accent
+  i.material-icons(role='presentation').fab-icon border_all
   form.cntt-wrapper
     #fab-hdr
       h3 Popup
@@ -16,5 +12,5 @@
         input#text2.mdl-textfield__input(type='text')
         label.mdl-textfield__label(for='text2') More text...
     .btn-wrapper
-      button#cancel.mdl-button.mdl-js-button Cancel
-      button#submit.mdl-button.mdl-js-button.mdl-button--primary Submit
+      button#cancel.mdl-button.mdl-js-button(style="z-index: 10") Cancel
+      button#submit.mdl-button.mdl-js-button.mdl-button--primary(style="z-index: 10") Submit

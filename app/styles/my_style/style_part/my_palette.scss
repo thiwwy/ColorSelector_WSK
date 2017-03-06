@@ -1,7 +1,7 @@
-.mypalette-btn{
+/*#mypalette-btn{
   position: fixed !important;
   top: calc(100vh - 200px) !important;
-}
+}*/
 
 
 
@@ -19,28 +19,41 @@
 .fab {
   z-index: 5;
   cursor: pointer;
-  border-radius: 50%;
+  //border-radius: 50%;
   position: fixed;
-  right: 400px;
-  top: 100px;
-  color: #fff;
-  background: #d35400;
+  //right: 400px;
+  //top: 100px;
+  //color: #fff;
+  //background: #d35400;
   height: 56px;
   width: 56px;
-  box-shadow: 0 5px 5px rgba(126, 111, 111, 0.39);
+  //box-shadow: 0 5px 5px rgba(126, 111, 111, 0.39);
   -webkit-transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
   transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
+  top: calc(100vh - 200px) !important;
+
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900;
+
+  //position: fixed !important;
+  //top: calc(100vh - 200px) !important;
 }
 
-.fab.active {
+.fab.active-mypalette {
   cursor: default;
-  background: #FFF;
+  background: #FFF !important;
   border-radius: .125em;
   width: 450px;
   height: 350px;
   box-shadow: 0 25px 35px 0 rgba(0, 0, 0, 0.35);
   top: 10%;
-  right: calc(50% - 250px);
+  right: calc(50% - 500px);
+  //margin: auto;
 }
 
 .fab-icon {
@@ -60,11 +73,11 @@
   user-select: none;
 }
 
-.active .fab-icon {
+.active-mypalette .fab-icon {
   display: none;
 }
 
-.active .protect {
+.active-mypalette .protect {
   background: none;
 }
 
@@ -72,7 +85,7 @@
   display: none;
 }
 
-.active .cntt-wrapper {
+.active-mypalette .cntt-wrapper {
   display: block;
 }
 
@@ -99,10 +112,4 @@
   padding: 6px 16px;
 }
 
-/* just presenation */
 .center{margin: 0 auto}
-.m-t-100{margin-top:100px}
-.box {
-  height: 300px;
-  padding: 100px;
-}
