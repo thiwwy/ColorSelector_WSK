@@ -28,9 +28,9 @@
   height: 56px;
   width: 56px;
   //box-shadow: 0 5px 5px rgba(126, 111, 111, 0.39);
-  -webkit-transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
-  transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
-  top: calc(100vh - 200px) !important;
+  //-webkit-transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
+  //transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
+  //top: calc(100vh - 200px) !important;
 
   position: fixed;
   display: block;
@@ -42,18 +42,24 @@
 
   //position: fixed !important;
   //top: calc(100vh - 200px) !important;
+
+  -webkit-transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
+  transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
 }
 
 .fab.active-mypalette {
   cursor: default;
   background: #FFF !important;
   border-radius: .125em;
-  width: 450px;
-  height: 350px;
+  //width: 450px;
+  //height: 350px;
+  width: 65%;
+  height: 85vh;
   box-shadow: 0 25px 35px 0 rgba(0, 0, 0, 0.35);
-  top: 10%;
-  right: calc(50% - 500px);
-  //margin: auto;
+  top: 1em;
+  //right: calc(50% - 32vh);
+  right: 17%;
+  margin: auto;
 }
 
 .fab-icon {
@@ -83,6 +89,8 @@
 
 .cntt-wrapper {
   display: none;
+  width: 80vh;
+  height: 80vh;
 }
 
 .active-mypalette .cntt-wrapper {
@@ -92,7 +100,7 @@
 #fab-hdr {
   position: absolute;
   width: 100%;
-  background: #d35400;
+  color: white;
 }
 
 #fab-hdr h3 {

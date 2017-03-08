@@ -1,9 +1,11 @@
 .mdl-layout__obfuscator(style= "position: fixed;")
-#mypalette-btn.fab.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.mdl-shadow--4dp.mdl-color--accent
-  i.material-icons(role='presentation').fab-icon border_all
+//#mypalette-btn.fab.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.mdl-shadow--4dp.mdl-color--accent
+.fab
+  #mypalette-btn.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.mdl-shadow--4dp.mdl-color--accent
+    i.material-icons(role='presentation').fab-icon border_all
   form.cntt-wrapper
-    #fab-hdr
-      h3 Popup
+    #fab-hdr.mdl-color--accent
+      h3 My Palette
     .cntt
       .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
         input#text1.mdl-textfield__input(type='text')
@@ -12,5 +14,5 @@
         input#text2.mdl-textfield__input(type='text')
         label.mdl-textfield__label(for='text2') More text...
     .btn-wrapper
-      button#cancel.mdl-button.mdl-js-button(style="z-index: 10") Cancel
-      button#submit.mdl-button.mdl-js-button.mdl-button--primary(style="z-index: 10") Submit
+      button#cancel.mdl-button.mdl-js-button.mdl-js-ripple-effect(style="z-index: 10") Cancel
+      button#submit.mdl-button.mdl-js-button.mdl-js-ripple-effect.mdl-button--primary(style="z-index: 10") Submit

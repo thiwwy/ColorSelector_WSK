@@ -2,6 +2,9 @@
 var overlay = $(".mdl-layout__obfuscator"),
         fab = $(".fab"),
      cancel = $("#cancel"),
+
+     mypalette_btn = $("#mypalette-btn"),
+
      submit = $("#submit");
 
 //fab click
@@ -14,6 +17,8 @@ function openFAB(event) {
   fab.addClass('active-mypalette');
   overlay.addClass('is-visible');
 
+  mypalette_btn.css( "display", "none" );
+
 }
 
 function closeFAB(event) {
@@ -22,9 +27,9 @@ function closeFAB(event) {
     event.stopImmediatePropagation();
   }
 
-  console.log("Hi!!");
-
   fab.removeClass('active-mypalette');
   overlay.removeClass('is-visible');
+
+  mypalette_btn.css( "display", "block" );
 
 }
