@@ -6,9 +6,13 @@ html(lang='')
       include partials/my_palette-button_to_container
       include partials/head
       main.mdl-layout__content
+
         #overview.mdl-layout__tab-panel.is-active
 
           section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp(style="max-width: 1200px")
+
+            include partials/color_picker
+
             .mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
               .mdl-tabs__tab-bar
                 a.mdl-tabs__tab.is-active(href='#related_colors') Related Colors
